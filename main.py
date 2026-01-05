@@ -59,9 +59,9 @@ def enviar_relatorio_por_email(loja_nome, arquivo_path):
         return
 
     mail.To = destinatario_loja
-    mail.CC = "monique.coutinho@manjos.com.br"
+    mail.CC = "monique.coutinho@manjos.com.br;bruno.souza@manjos.com.br"
     mail.Subject = f"Relatório de Contagem Diária - {loja_nome}"
-    mail.Body = f"Segue em anexo o relatório de contagem diária da loja {loja_nome}."
+    mail.Body = f"Segue em anexo o relatório de contagem diária da loja {loja_nome}. Enviar até as 12:00."
     mail.Attachments.Add(os.path.abspath(arquivo_path))
     mail.Send()
     print(f">>> E-mail enviado para {destinatario_loja} (CC: Monique)")
