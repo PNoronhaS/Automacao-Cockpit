@@ -1,4 +1,4 @@
-📊 Automação de Relatórios Diários
+#📊 Automação de Relatórios Diários
 Este projeto é um script em Python que automatiza o processo de login em um sistema web, exportação de relatórios em Excel e envio desses relatórios por e-mail para cada loja cadastrada.
 
 🚀 Funcionalidades
