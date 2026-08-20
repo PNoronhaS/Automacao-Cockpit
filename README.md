@@ -1,7 +1,7 @@
-#📊 Automação de Relatórios Diários
+# 📊 Automação de Relatórios Diários
 Este projeto é um script em Python que automatiza o processo de login em um sistema web, exportação de relatórios em Excel e envio desses relatórios por e-mail para cada loja cadastrada.
 
-🚀 Funcionalidades
+# 🚀 Funcionalidades
 Login automático no sistema via navegador.
 
 Exportação de relatórios em formato .xlsx usando automação de tela.
@@ -18,7 +18,7 @@ Envio automático por e-mail via Outlook, com anexos e assunto personalizado.
 
 Leitura de lojas e credenciais a partir de um arquivo lojas.csv.
 
-📂 Estrutura do Projeto
+# 📂 Estrutura do Projeto
 main.py → Script principal com toda a lógica.
 
 lojas.csv → Arquivo contendo lista de lojas, usuários e senhas.
@@ -27,7 +27,7 @@ Pasta de Downloads → Local onde os relatórios são baixados.
 
 Pasta de Relatórios → Local onde os arquivos tratados são salvos.
 
-⚙️ Configurações
+# ⚙️ Configurações
 No início do código existem variáveis que podem ser ajustadas conforme seu ambiente:
 
 URL_LOGIN → URL da página de login do sistema.
@@ -40,7 +40,7 @@ emails_por_loja → Dicionário com os e-mails de cada loja.
 
 alias_lojas → Mapeamento de nomes alternativos para padronização.
 
-📑 Estrutura do CSV (lojas.csv)
+# 📑 Estrutura do CSV (lojas.csv)
 O arquivo deve conter colunas como:
 
 csv
@@ -48,7 +48,8 @@ loja,usuario,senha
 Loja A,usuarioA,senhaA
 Loja B,usuarioB,senhaB
 Loja C,usuarioC,senhaC
-🖥️ Dependências
+
+# 🖥️ Dependências
 O script utiliza as seguintes bibliotecas:
 
 os, time, glob, csv, datetime → Bibliotecas padrão do Python.
@@ -65,7 +66,8 @@ Instale as dependências com:
 
 bash
 pip install pyautogui openpyxl pywin32
-▶️ Como Executar
+
+# ▶️ Como Executar
 Configure o arquivo lojas.csv com as lojas e credenciais.
 
 Ajuste os diretórios (DOWNLOADS_DIR e DESTINO_DIR) conforme seu ambiente.
@@ -84,7 +86,7 @@ Tratar os arquivos Excel.
 
 Enviar os relatórios por e-mail automaticamente.
 
-⚠️ Observações
+# ⚠️ Observações
 As coordenadas de tela (COORD_USUARIO, COORD_SENHA, etc.) foram configuradas para resolução 1366x768. Se sua tela tiver outra resolução, ajuste os valores.
 
 O envio de e-mails depende de ter o Outlook instalado e configurado na máquina.
